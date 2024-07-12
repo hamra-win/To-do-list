@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOC123</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-sm">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="margin-top: 10px"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">To Do List</a>
+        </div>
+      </nav>
+
+      <div
+        class="card mb-3"
+        id="card"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          text-align: center;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgb(0, 0, 0, 2);
+          padding: 20px;
+          margin-top: 30px;
+          overflow: hidden;
+        "
+      >
+        <div class="card mb-3 d-flxe" id="profile1">
+          <div class="input-group m-3">
+            <input
+              type="text"
+              id="input"
+              placeholder="Add new task for the day"
+              aria-describedby="button-addon2"
+              style="width: 700px; border-radius: 5px"
+            />
+            <button
+              class="btn btn-secondary"
+              type="button"
+              id="button-addon2"
+              style="margin-left: 10px"
+            >
+              Add Task
+            </button>
+          </div>
+        </div>
+        <div class="card mb-4" id="TaskList">
+          <table id="table">
+            <thead>
+              <thead>
+                <tr>
+                  <th>status</th>
+                  <th>Task</th>
+                  <th>Remove Task Here</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </thead>
+            <tbody id="Task-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="UI.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
